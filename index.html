@@ -2,23 +2,96 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name = "description" content="Store main page">
-    <link rel="stylesheet" href="/Users/leeminhyeong/Desktop/Store/style.css">
+    <meta name = "viewpoint" content="width=device-width, initial-scal=1.0">
     <title>Store</title>
+    <style>
+        .container{
+            display:flex;
+            flex-direction: column;
+            background-color: aliceblue;
+            height: 100vh;
+        }
+        header{
+            border-bottom:1px solid gray;
+            padding: 10px 10px 10px 20px;
+            font-size:30px;
+        }
+        footer{
+            border-top:1px solid gray;
+            text-align:center;
+            padding:15px;
+            font-size:20px;
+        }
+        .content{
+            display:flex;
+        }
+        nav{
+            text-align:center;
+            border-bottom: 1px solid gray;
+            font-size:20px;
+        }
+        nav ul{
+            display:flex;
+            list-style-type: none;
+        }
+        
+        nav li:nth-child(1){
+            border-right:1px solid gray;
+            flex-grow:1;
+        }
+        
+        nav li:nth-child(2){
+            border-right:1px solid gray;
+            flex-grow:1;
+        }
+        
+        nav li:nth-child(3){
+            border-right:1px solid gray;
+            flex-grow:1;
+        }
+        
+        main{
+            display: flex;
+            flex-grow:1;
+        }
+
+        section{
+            padding:10px;
+            flex-grow:3;
+            border-right:1px solid gray;
+            
+        }
+        
+        article{
+            padding:10px;
+            flex-grow:1;
+        }
+       
+    </style>
   </head>
   <body>
-    <header>
-      <h1><a href = "/Users/leeminhyeong/Desktop/Store/index.html" title="main page">Main Store</a></h1>
-    </header>
-    <nav>
-        <ul>
-          <li><a herf="">인기 상품</a></li>
-          <li><a herf="">상점 목록</a></li>
-          <li><a herf="">자주하는 질문</a></li>
-        </ul>
-        <div id="text">
-          본 상점은 아직 오픈 전입니다.
-        </div>
-    </nav>
+   <div class="container">
+        <header>
+          <h1>Main Store</h1>
+        </header>
+        <nav>
+            <ul>
+              <li><a herf="">인기 상품</a></li>
+              <li><a herf="">상점 목록</a></li>
+              <li><a herf="">자주하는 질문</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                본 상점은 아직 오픈 전입니다.
+            </section>
+            <article>
+                로그인 구역   
+            </article>
+       </main>
+       <footer>
+           <a href = "/Users/leeminhyeong/Desktop/Store/index.html" title="main page">홈페이지</a>
+       </footer>
+    </div>
   </body>
 </html>
